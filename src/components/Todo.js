@@ -3,13 +3,19 @@ import React from 'react';
 class Todo extends React.Component {
 	constructor() {
 		super();
+		// this.state = {
+		// 	itemData: {}
+		// }
+	}
+
+	clickHandler = e => {
+		// console.log('test');
+		this.props.toggleItem(this.props.taskData);
 	}
 
 	render() {
 		return (
-			<ul>
-				<li>{this.props.taskData.task}</li>
-			</ul>
+			<p id={this.props.taskData.id} onClick={this.clickHandler}>{this.props.taskData.task}</p>
 		);
 	}
 }
