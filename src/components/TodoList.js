@@ -5,10 +5,6 @@ import './Todo.css';
 import Todo from './Todo.js';
 
 class TodoList extends React.Component {
-	constructor() {
-		super();
-	}
-
 	render() {
 		return (
 			<div>
