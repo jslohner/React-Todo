@@ -15,7 +15,7 @@ class Todo extends React.Component {
 
 	render() {
 		return (
-			<p id={this.props.taskData.id} onClick={this.clickHandler}>{this.props.taskData.task}</p>
+			<p id={this.props.taskData.id} className='task-list-item' onClick={this.clickHandler}>{this.props.taskData.task}</p>
 		);
 	}
 }
