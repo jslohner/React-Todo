@@ -1,5 +1,6 @@
 .task-list-item {
 	cursor: pointer;
+	width: fit-content;
 }
 
 .task-list-item.completed {
