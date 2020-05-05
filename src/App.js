@@ -30,11 +30,9 @@ class App extends React.Component {
 	toggleItem = itemData => {
 		if(!itemData.completed) {
 			itemData.completed = true;
-			document.getElementById(`${itemData.id}`).style = 'text-decoration: line-through';
 		}
 		else {
 			itemData.completed = false;
-			document.getElementById(`${itemData.id}`).style = 'text-decoration: none';
 		}
 
 		this.setState({

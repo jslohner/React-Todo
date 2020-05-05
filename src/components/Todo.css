@@ -1,3 +1,7 @@
 .task-list-item {
 	cursor: pointer;
 }
+
+.task-list-item.completed {
+	text-decoration: line-through;
+}
