@@ -28,7 +28,7 @@ class App extends React.Component {
 	}
 
 	toggleItem = itemData => {
-		if(!itemData.completed) {
+		if (!itemData.completed) {
 			itemData.completed = true;
 		}
 		else {
